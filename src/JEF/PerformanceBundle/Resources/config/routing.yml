@@ -1,0 +1,27 @@
+jef_performance_home:
+    path:		/{page}
+    defaults:	{ _controller: JEFPerformanceBundle:Performance:index, page: 1 }
+    requirements:
+        page: \d*
+
+jef_performance_view:
+    path:		/document/{id}
+    defaults:	{ _controller: JEFPerformanceBundle:Performance:view }
+    requirements:
+        id: \d+
+
+jef_performance_add:
+    path:		/add
+    defaults:	{ _controller: JEFPerformanceBundle:Performance:add }
+
+jef_performance_edit:
+    path:       /edit/{id}
+    defaults:   { _controller: JEFPerformanceBundle:Performance:edit }
+    requirements:
+        id: \d+
+
+jef_performance_delete:
+    path:       /delete/{id}
+    defaults:   { _controller: JEFPerformanceBundle:Performance:delete }
+    requirements:
+        id: \d+

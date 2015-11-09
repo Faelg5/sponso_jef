@@ -1,0 +1,4 @@
+services:
+#    jef_performance.example:
+#        class: JEF\PerformanceBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

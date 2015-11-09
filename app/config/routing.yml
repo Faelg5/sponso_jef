@@ -1,0 +1,3 @@
+jef_performance:
+    resource: "@JEFPerformanceBundle/Resources/config/routing.yml"
+    prefix:   /performance

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Affichage d'un document ({{ id }})</title>
+	</head>
+	<body>
+		<h1>Affichage du document {{ id }}</h1>
+		<p>
+			Voici l'annonce numéro : {{ id }}.
+			{# Afficher tous les messages flash dont le nom est "info"#}
+			{% for message in app.session.flashbag.get('info') %}
+				<p>Message flash : {{ message }}</p>
+			{% endfor %}
+			<!-- Génère l'URL absolue depuis cette vue, avec la fonction "url".-->
+			<!-- <a href="{{ path('jef_performance_view', { "id": id}) }}">
+			Lien vers le document à l'id {{ id }}
+			</a> -->
+		</p>
+	</body>
+</html>
